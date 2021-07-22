@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "prettier",
+    "plugin:testing-library/react"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "prettier", "testing-library"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/no-unescaped-entities": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "consistent-return": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/no-array-index-key": "off",
+    "no-debugger": "warn",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["draft"] }],
+    "no-case-declarations": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
+}

@@ -1,0 +1,10 @@
+export const selectLoading = (state) => state.app.loading;
+export const selectDashboards = (state) => state.app.dashboards;
+export const selectTimeframe = (state) => state.app.timeframe;
+export const selectSearchTerm = (state) => state.app.searchTerm;
+export const selectDashboard = (state) => state.app.dashboard;
+export const selectWidgetDlgData = (state) => state.app.widgetDlgData;
+export const selectAvailableMetrics = (state) => state.app.availableMetrics;
+export const selectMetricData = (state) => state.app.metricData;
+export const selectEventData = (state) => state.app.eventData;
+export const selectProducts = (state) => state.app.products;
